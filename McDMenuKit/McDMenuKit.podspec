@@ -11,20 +11,20 @@ Pod::Spec.new do |s|
     s.version      = '0.0.1'
     s.summary      = 'McDonalds Account module for iOS SDK.'
     
-    s.homepage     = 'htps://www.mcdonalds.com'
-    s.license      = 'No license'
+    s.homepage     = 'htps://www.google.com'
+    s.license      = { :type => "MIT", :file => "LICENSE" }
     s.author       = { 'McDonalds' => 'CG' }
     
     s.platform     = :ios, '10.0'
     s.source       = { :git => 'https://github.com/munendragisingh/menuTest.git',
-                       :tag => s.version}
+                       :tag => 'master'}
     s.requires_arc = true
     
-    s.source_files = 'McDonaldsSDK/MCDSDKAccount/*.h'
-    s.resources = ["McDonaldsSDK/MCDSDKAccount/resource/*.json"]
+    s.source_files = 'McDMenuKit/**/*.{swift}'
+    #s.resources = ["McDMenuKit/McDMenuKit/resource/*.json"]
     
     s.subspec 'src' do |ss|
-        ss.source_files = 'McDMenuKit/McDMenuKit/src/**/*.swift'
+        ss.source_files = 'McDMenuKit/McDMenuKit/src/**/*.{swift}'
         
     end
 
